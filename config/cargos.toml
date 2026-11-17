@@ -1,0 +1,46 @@
+# =============================================================================
+#  CARGOS: o que cada CARGO da planilha de verbas significa no dashboard
+#
+#  grupo = "colaborador"  as vendas da pessoa entram no total da loja e nos
+#                         rankings de colaboradores.
+#  grupo = "gerente"      as vendas dele são a soma da EQUIPE (não entram no
+#                         total da loja, para não contar duas vezes); a verba
+#                         dele (A RECEBER) entra no total de verbas.
+#  equipe = [...]         só para gerente: quais cargos formam a equipe dele.
+#
+#  Maiúsculas, acentos e espaços sobrando não importam: "Tecnico", "TÉCNICO" e
+#  "Técnico " são o mesmo cargo. O "nome" abaixo é como o cargo aparece no
+#  dashboard.
+#
+#  Cargo novo na planilha? Acrescente um bloco [[cargo]] aqui e rode de novo:
+#      python atualizar.py
+#  Enquanto um cargo não estiver aqui, a importação é BLOQUEADA e o script diz
+#  em qual arquivo e linha ele está.
+# =============================================================================
+
+[[cargo]]
+nome = "Consultor"
+grupo = "colaborador"
+
+[[cargo]]
+nome = "Vendedor de Peças"
+grupo = "colaborador"
+
+[[cargo]]
+nome = "Técnico"
+grupo = "colaborador"
+
+[[cargo]]
+nome = "Gerente Peças"
+grupo = "gerente"
+equipe = ["Consultor", "Vendedor de Peças"]
+
+[[cargo]]
+nome = "Gerente Pós Vendas"
+grupo = "gerente"
+equipe = ["Consultor", "Vendedor de Peças"]
+
+[[cargo]]
+nome = "Chefe de oficina"
+grupo = "gerente"
+equipe = ["Técnico"]

@@ -1,0 +1,15 @@
+# Credenciais: NUNCA vão para o GitHub.
+.streamlit/secrets.toml
+
+# Dados reais (nomes e valores das pessoas) ficam só nesta máquina.
+entrada/*.xlsx
+entrada/**/*.xlsx
+conferencias/*.xlsx
+BASE GRUPO TECAR.xlsx
+tests/dados/
+
+# Arquivos temporários
+__pycache__/
+*.pyc
+~$*
+.superpowers/

@@ -1,0 +1,54 @@
+# =============================================================================
+#  LOJAS DO GRUPO TECAR
+#
+#  Uma seção [[loja]] por concessionária. Para incluir uma loja nova, copie um
+#  bloco inteiro e ajuste os campos. Depois de editar, rode:
+#      python atualizar.py
+#  (com a pasta "entrada" vazia ele só atualiza lojas, preços e cargos no banco).
+#
+#  arquivo      como a loja aparece no NOME do arquivo de verbas, depois de
+#               "TECAR". Ex.: "VERBAS OUTUBRO TECAR JEEP GOIANIA.xlsx" -> "JEEP GOIANIA".
+#               Maiúsculas e acentos não importam.
+#  nome         como a loja aparece no dashboard.
+#  marca/cidade usados nos filtros.
+#  preco_diant  preço de venda do refil (R$ por venda). Use ponto ou vírgula:
+#               199 ou "199,90". Deixe "" se não souber: o faturamento aparece
+#               como "—" e o atualizar.py avisa.
+#  preco_tras   preço do refil traseiro. A TECAR não envia venda de traseiro,
+#               então fica "".
+#
+#  ATENÇÃO: o preço vale para TODOS os meses da loja. Mudar o preço recalcula
+#  o faturamento do histórico inteiro.
+# =============================================================================
+
+[[loja]]
+arquivo = "JEEP GOIANIA"
+nome = "Jeep Goiânia"
+marca = "Jeep"
+cidade = "Goiânia"
+preco_diant = 199
+preco_tras = ""
+
+[[loja]]
+arquivo = "MERCEDES BRASILIA"
+nome = "Mercedes Brasília"
+marca = "Mercedes-Benz"
+cidade = "Brasília"
+preco_diant = 199
+preco_tras = ""
+
+[[loja]]
+arquivo = "MERCEDES GOIANIA"
+nome = "Mercedes Goiânia"
+marca = "Mercedes-Benz"
+cidade = "Goiânia"
+preco_diant = 199
+preco_tras = ""
+
+[[loja]]
+arquivo = "MERCEDES UBERLANDIA"
+nome = "Mercedes Uberlândia"
+marca = "Mercedes-Benz"
+cidade = "Uberlândia"
+preco_diant = 199
+preco_tras = ""

@@ -1,0 +1,14 @@
+# Tema Grupo TECAR: PRETO (primária) e BRANCO (secundária).
+# Conteúdo em cinza-claro neutro (o branco puro #FFFFFF cansava a vista) com texto
+# quase preto; barra lateral e cabeçalho pretos (CSS no app.py); botões, seleção e
+# cartões em destaque em preto. Gráficos em preto e cinzas.
+[theme]
+base = "light"
+primaryColor = "#000000"
+backgroundColor = "#E9E9E6"
+secondaryBackgroundColor = "#DADAD6"
+textColor = "#141414"
+font = "sans serif"
+
+[server]
+runOnSave = false
